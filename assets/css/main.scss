@@ -234,6 +234,7 @@ button:focus {
     }
     .new_card_11 {
       @include background-img('../images/last_new5.png');
+      margin-top: 30px;
     }
     .new_card_12 {
       @include background-img('../images/last_new6.png');

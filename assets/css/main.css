@@ -323,6 +323,7 @@ body .last_news .new_card_11 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 30px;
 }
 
 body .last_news .new_card_12 {
@@ -691,6 +692,9 @@ body .comments_box .reply i {
   body .new_card_9,
   body .new_card_10 {
     margin: 30px 0 !important;
+  }
+  body .new_card_11 {
+    margin: 0 !important;
   }
 }
 
