@@ -112,8 +112,11 @@ body {
   .reviews_buttons_mobile {
     display: block;
   }
+  .new_card_3,
   .new_card_4,
-    .new_card_6,
+  .new_card_6 {
+    margin-top: 30px !important;
+  }
     .new_card_12 {
       margin-top: 0 !important;
     }
@@ -207,6 +210,10 @@ body {
   .new_card_10,
   .new_card_11 {
     margin-bottom: 30px !important;
+  }
+  .new_card_4,
+  .new_card_6 {
+    margin-top: 0px !important;
   }
   }
 }

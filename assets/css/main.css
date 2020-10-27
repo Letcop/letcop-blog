@@ -258,6 +258,7 @@ body .last_news .new_card_1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 420px !important;
 }
 
 body .last_news .new_card_2 {
@@ -709,8 +710,11 @@ body .comments_box .reply i {
   body .reviews_buttons_mobile {
     display: block;
   }
+  body .new_card_3,
   body .new_card_4,
-  body .new_card_6,
+  body .new_card_6 {
+    margin-top: 30px !important;
+  }
   body .new_card_12 {
     margin-top: 0 !important;
   }
@@ -818,6 +822,10 @@ body .comments_box .reply i {
   body .new_card_10,
   body .new_card_11 {
     margin-bottom: 30px !important;
+  }
+  body .new_card_4,
+  body .new_card_6 {
+    margin-top: 0px !important;
   }
 }
 

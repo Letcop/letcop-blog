@@ -210,6 +210,7 @@ button:focus {
     }
     .new_card_1 {
       @include background-img('../images/photo_news.png');
+      height: 420px !important;
     }
     
     .new_card_2 {
