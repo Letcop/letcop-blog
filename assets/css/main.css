@@ -77,38 +77,43 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-body header {
+body .header_blog {
   background-image: url("../images/header.jpg");
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
+  padding: 20px 0 45px;
 }
 
-body header .head__logine i {
+body .header_blog .head__logine i {
   margin-top: -15px;
 }
 
-body header .close {
-  z-index: 999 !important;
+body .header_blog .close,
+body .header_blog .fa-times-circle,
+body .header_blog .mobile__bell_modal {
+  z-index: 99 !important;
 }
 
-body header .header_sub_text p {
-  font-size: 35px;
+body .header_blog .header_blog_sub_text {
+  display: block;
+  font-size: 40px;
   font-weight: 700;
   color: #ffffff;
+  margin-top: -10px;
 }
 
-body header .head__main_block {
+body .header_blog .head__main_block {
   margin-left: 50px;
   height: 100px !important;
+  padding-bottom: 40px;
 }
 
-body header .head__name {
+body .header_blog .head__name {
   margin-top: -15px;
 }
 
-body header .large_signIn {
+body .header_blog .large_signIn {
   margin-top: 25px;
   margin-right: 50px;
 }
@@ -177,7 +182,7 @@ body .last_news .new_card_list {
   padding: 20px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  z-index: 999;
+  z-index: 1;
 }
 
 body .last_news .new_card_list strong {
@@ -397,8 +402,9 @@ body .reviews_buttons_mobile .review_counter {
 }
 
 body .back_home {
+  margin-top: -20px;
   background-color: #f8f8fa;
-  padding: 45px 0;
+  padding: 35px 0;
 }
 
 body .back_home .back_home_text {
@@ -474,8 +480,8 @@ body .comments_box .my_comment form textarea {
   font-weight: 500;
   padding-left: 10px;
   color: #0f0e41;
-  padding-top: 5px;
-  padding-right: 160px;
+  padding: 5px 160px 5px 15px;
+  overflow: hidden;
   resize: none;
 }
 
@@ -537,12 +543,22 @@ body .comments_box .text_comment {
   margin-top: 10px;
 }
 
-body .comments_box .next_comment {
-  background-color: #c1c4ca;
+body .comments_box .comment_bgc {
+  background-color: #c1c4ca !important;
+}
+
+body .comments_box .reply {
+  display: none !important;
+}
+
+body .comments_box .reply_hide {
+  margin-top: 15px;
+  display: block !important;
 }
 
 body .comments_box .reply a {
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 500;
   color: #253556;
 }
 
@@ -632,6 +648,15 @@ body .comments_box .reply i {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+  body .header_blog {
+    padding: 20px 0 50px !important;
+  }
+  body .header_blog .header_blog_sub_text {
+    margin-top: -30px !important;
+  }
+  body .back_home {
+    margin-top: -30px !important;
+  }
   body .benefits_tablet {
     margin-top: 20px;
   }
@@ -699,6 +724,15 @@ body .comments_box .reply i {
 }
 
 @media only screen and (max-width: 767px) {
+  body .header_blog {
+    padding: 0 0 30px !important;
+  }
+  body .header_blog .header_blog_sub_text {
+    margin-top: -10px !important;
+    font-size: 35px !important;
+    letter-spacing: 2px;
+    font-weight: 600 !important;
+  }
   body .last_news .last_news_mobile {
     margin-bottom: 30px;
   }
@@ -780,6 +814,17 @@ body .comments_box .reply i {
 }
 
 @media only screen and (max-width: 567px) {
+  body header .mobile_row_title {
+    margin-top: 0 !important;
+  }
+  body header .header_sub_text p {
+    font-size: 35px !important;
+    letter-spacing: 2px;
+    padding-left: 10px;
+  }
+  body .title_text {
+    text-align: center;
+  }
   body .head__singIn {
     display: block !important;
   }
@@ -795,6 +840,9 @@ body .comments_box .reply i {
   }
   body .my_comment button {
     margin: 20px auto !important;
+  }
+  body .last_news {
+    margin-top: -20px !important;
   }
 }
 

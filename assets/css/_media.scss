@@ -57,6 +57,15 @@ body {
 
 @media only screen and(min-width: 768px) and(max-width: 992px) {
   body {
+    .header_blog {
+      padding: 20px 0 50px !important;
+      .header_blog_sub_text {
+        margin-top: -30px !important;
+      }
+    }
+    .back_home {
+      margin-top: -30px !important;
+    }
     .benefits_tablet {
       margin-top: 20px;
     }
@@ -119,6 +128,15 @@ body {
 }
 @media only screen and(max-width: 767px) {
   body {
+    .header_blog {
+      padding: 0 0 30px !important;
+      .header_blog_sub_text {
+        margin-top: -10px !important;
+        font-size: 35px !important;
+        letter-spacing: 2px;
+        font-weight: 600 !important;
+      }
+    }
     .last_news .last_news_mobile {
       margin-bottom: 30px;
     }
@@ -192,6 +210,19 @@ body {
 
 @media only screen and(max-width: 567px) {
   body {
+    header {
+      .mobile_row_title {
+        margin-top: 0 !important;
+      }
+      .header_sub_text p {
+        font-size: 35px !important;
+        letter-spacing: 2px;
+        padding-left: 10px;
+      }
+    }
+    .title_text {
+      text-align: center;
+    }
     .head__singIn {
       display: block !important;
     }
@@ -207,6 +238,9 @@ body {
     }
     .my_comment button {
       margin: 20px auto !important;
+    }
+    .last_news {
+      margin-top: -20px !important;
     }
   }
 }

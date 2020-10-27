@@ -67,23 +67,31 @@ button:focus {
 
  body {
   font-family: 'Montserrat', sans-serif;
-  header {
-    @include background-img('../images/header.jpg');
+  .header_blog {
+    background-image: url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: $primary-color-text;
+    padding: 20px 0 45px;
     .head__logine i {
       margin-top: -15px;
     }
-    .close {
-      z-index: 999 !important;
+    .close,
+    .fa-times-circle,
+    .mobile__bell_modal {
+      z-index: 99 !important;
     }
-    .header_sub_text p {
-      font-size: 35px;
+    .header_blog_sub_text {
+      display: block;
+      font-size: 40px;
       font-weight: 700;
       color: $primary-color-text;
+      margin-top: -10px;
     }
     .head__main_block {
       margin-left: 50px;
       height: 100px !important;
+      padding-bottom: 40px;
     }
     .head__name {
       margin-top: -15px;
@@ -148,7 +156,7 @@ button:focus {
         padding: 20px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        z-index: 999;
+        z-index: 1;
       }
       .new_card_list strong {
         font-size: 18px;
@@ -299,8 +307,9 @@ button:focus {
   // End section ******************
 
   .back_home {
+    margin-top: -20px;
     background-color: $divider-color-light;
-    padding: 45px 0;
+    padding: 35px 0;
 
     .back_home_text {
       font-size: 22px;
@@ -354,8 +363,8 @@ button:focus {
           font-weight: 500;
           padding-left: 10px;
           color: #0f0e41;
-          padding-top: 5px;
-          padding-right: 160px;
+          padding: 5px 160px 5px 15px;
+          overflow: hidden;
           resize: none;
         }
         textarea:focus {
@@ -403,11 +412,19 @@ button:focus {
       color: $accent-color-light;
       margin-top: 10px;
     }
-    .next_comment {
-      background-color: $divider-color-text;
+    .comment_bgc {
+      background-color: $divider-color-text !important;
+    }
+    .reply {
+      display: none !important;
+    }
+    .reply_hide {
+      margin-top: 15px;
+      display: block !important;
     }
     .reply a {
-      font-size: 13px;
+      font-size: 14px;
+      font-weight: 500;
       color: $accent-color;
     }
     .reply i {
