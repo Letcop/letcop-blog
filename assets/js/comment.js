@@ -1,4 +1,5 @@
 const comments = document.querySelectorAll('.comments_group');
+const commentsBox = document.querySelectorAll('.comments_group');
 
 comments.forEach((comment) => {
   comment.addEventListener('mouseover', () => {
@@ -20,3 +21,9 @@ function auto_grow(element) {
   element.style.height = (element.scrollHeight) + 'px';
 
 }
+
+// comment.lastElementChild.classList.add('comment_bgc')
+// comment.nextElementSibling.classList.add('reply_hide');
+
+// commentBox.children[2].classList.remove('reply_hide');
+// commentBox.children[1].children[1].classList.remove('comment_bgc')

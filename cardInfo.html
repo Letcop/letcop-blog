@@ -555,17 +555,17 @@
         <div class="col-lg-11 col-10">
           <form>
             <textarea onkeypress="auto_grow(this)" onkeydown="auto_grow(this)" class="w-100"
-              placeholder="Написать комментарий" required></textarea>
+              placeholder="Написать комментарий" required id="my__comment"></textarea>
             <button type="submit">опубликовать</button>
           </form>
         </div>
       </div>
 
-      <div class="row comments_group mt-5">
+      <div class="row comments_group">
         <div class="col-md-1 col-2 ml-auto">
           <img src="assets/images/user4.png" alt="">
         </div>
-        <div class="col-10">
+        <div class="col-10 user_comment">
           <div class="user_info d-flex justify-content-between align-items-start">
             <div class="d-flex flex-column">
               <strong>Георгий Петров.</strong>
@@ -584,18 +584,18 @@
           </div>
         </div>
         <div class="col-md-6 text-center reply">
-          <a href="./cardInfo.html">
+          <a href="#my__comment">
             <i class="far fa-redo"></i>
             Ответить
           </a>
         </div>
       </div>
 
-      <div class="row comments_group mt-5">
+      <div class="row comments_group">
         <div class="col-md-1 col-2">
           <img src="assets/images/user5.png" alt="">
         </div>
-        <div class="col-10 mr-auto">
+        <div class="col-10 user_comment mr-auto">
           <div class="user_info d-flex justify-content-between align-items-start">
             <div class="d-flex flex-column">
               <strong>Георгий Петров.</strong>
@@ -613,7 +613,7 @@
           </div>
         </div>
         <div class="col-md-4 text-center reply">
-          <a href="./cardInfo.html">
+          <a href="#my__comment">
             <i class="far fa-redo"></i>
             Ответить
           </a>

@@ -355,7 +355,7 @@ button:focus {
       form {
         @include d-lex();
         position: relative;
-        textarea {
+        #my__comment {
           border: none;
           border-radius: 30px;
           height: 30px;
@@ -367,7 +367,7 @@ button:focus {
           overflow: hidden;
           resize: none;
         }
-        textarea:focus {
+        #my__comment:focus {
           outline: none;
         }
         button {
@@ -386,7 +386,10 @@ button:focus {
       }
     }
     .comments_group {
-      @include d-lex();
+      min-height: 180px;
+      display: flex;
+      position: relative;
+      margin-top: 30px;
     }
     .user_info strong {
       font-size: 18px;
@@ -416,6 +419,9 @@ button:focus {
       background-color: $divider-color-text !important;
     }
     .reply {
+      position: absolute;
+      bottom: 0;
+      left: 0;
       display: none !important;
     }
     .reply_hide {

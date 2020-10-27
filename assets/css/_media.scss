@@ -166,6 +166,10 @@ body {
   .user_info {
     margin: 20px !important;
   }
+  .my_comment {
+    display: flex;
+    align-items: start !important;
+  }
   .my_comment form {
     flex-direction: column !important;
   }
@@ -278,6 +282,16 @@ body {
     .card_new_info_page .blog_img {
       height: 200px !important;
       object-fit: cover;
+    }
+    .my_comment form button {
+      margin-left: 40px !important;
+    }
+    form {
+      textarea {
+        resize: vertical !important;
+        overflow: auto !important;
+        border-radius: 10px !important;
+      }
     }
     
   }

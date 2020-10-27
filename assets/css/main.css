@@ -472,7 +472,7 @@ body .comments_box .my_comment form {
   position: relative;
 }
 
-body .comments_box .my_comment form textarea {
+body .comments_box .my_comment form #my__comment {
   border: none;
   border-radius: 30px;
   height: 30px;
@@ -485,7 +485,7 @@ body .comments_box .my_comment form textarea {
   resize: none;
 }
 
-body .comments_box .my_comment form textarea:focus {
+body .comments_box .my_comment form #my__comment:focus {
   outline: none;
 }
 
@@ -504,15 +504,12 @@ body .comments_box .my_comment form button {
 }
 
 body .comments_box .comments_group {
+  min-height: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
+  margin-top: 30px;
 }
 
 body .comments_box .user_info strong {
@@ -548,6 +545,9 @@ body .comments_box .comment_bgc {
 }
 
 body .comments_box .reply {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   display: none !important;
 }
 
@@ -765,6 +765,14 @@ body .comments_box .reply i {
   body .user_info {
     margin: 20px !important;
   }
+  body .my_comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
+  }
   body .my_comment form {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -879,6 +887,14 @@ body .comments_box .reply i {
     height: 200px !important;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  body .my_comment form button {
+    margin-left: 40px !important;
+  }
+  body form textarea {
+    resize: vertical !important;
+    overflow: auto !important;
+    border-radius: 10px !important;
   }
 }
 
